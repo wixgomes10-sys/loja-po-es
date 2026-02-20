@@ -6,7 +6,7 @@
 html { scroll-behavior:smooth; }
 body {
   font-family: 'Segoe UI', system-ui, sans-serif;
-  background: linear-gradient(135deg, #0a001f 0%, #1a0033 100%);
+  background: linear-gradient(135deg, #0a001f 0%, #30780f 100%);
   color: #f0e6ff;
   overflow-x: hidden;
 }
@@ -299,5 +299,4 @@ body {
   .menu { display: none; position: fixed; top: 80px; left: 0; right: 0; background: rgba(15,0,31,0.98); flex-direction: column; padding: 2rem; gap: 2rem; }
   .menu.active { display: flex; }
   .menu-toggle { display: block; }
-
 }
