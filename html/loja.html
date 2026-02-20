@@ -1,0 +1,75 @@
+<!--
+  ✅ COMO USAR
+  1) Coloque suas imagens na pasta: /assets/
+  2) Troque os caminhos abaixo:
+     - assets/bg-pocoes.jpg      (FUNDO da loja)
+     - assets/personagem.png     (BRUXA/PIXEL ART)
+     - assets/avatar.png         (ÍCONE pequeno do topo)
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loja de Poções - Layout</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="screen">
+    <section class="stage">
+
+      <!-- ✅ IMAGEM DO PERSONAGEM (coloque aqui) -->
+       <div id="img">
+             
+                <img  src="Design_sem_nome-removebg-preview.png" class="bruxa" />
+                 <img  src="WhatsApp_Image_2026-02-17_at_13.32.10-removebg-preview.png" class="balcao" />
+       </div>
+    
+
+      <!-- Botão INICIO -->
+      <button class="inicio"></button>
+
+      <!-- Painel da direita -->
+      <aside class="panel">
+        <header class="panel__header">
+          <div class="avatar">
+            <!-- ✅ IMAGEM DO AVATAR (coloque aqui) -->
+            <img src="Design_sem_nome-removebg-preview.png" alt="Avatar" />
+          </div>
+          <div class="title">FRANCY MARIO</div>
+        </header>
+
+        <div class="panel__body">
+
+  <!-- Área das mensagens -->
+  <div class="chat" id="chat">
+
+    <!-- Mensagem inicial da bruxa -->
+    <div class="msg npc">
+      🧙‍♀️ Olá viajante... deseja uma poção?
+    </div>
+
+  </div>
+
+  <!-- Área de digitação -->
+  <div class="chat-input">
+    <input 
+      type="text" 
+      id="inputMensagem" 
+      placeholder="Digite sua mensagem..."
+      onkeypress="if(event.key==='Enter') enviarMensagem()"
+    >
+    <button onclick="enviarMensagem()">Enviar</button>
+  </div>
+
+</div>
+        </div>
+      </aside>
+
+    </section>
+  </main>
+</body>
+<script src="chat.js"></script>
+</html>

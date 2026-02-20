@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Poções • Elixir Místico</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVEGAÇÃO -->
+  <nav class="nav">
+    <div class="nav-container">
+      <img src="img/logo.png" alt="Logo Loja de Poções" class="logo-nav">
+      <ul class="menu">
+        <li><a href="#inicio" class="nav-link">Início</a></li>
+        <li><a href="#produtos" class="nav-link">Poções</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="cart-btn" class="cart-btn">
+          <i class="fas fa-shopping-bag"></i>
+          <span id="cart-count" class="cart-count">0</span>
+        </button>
+        <button id="menu-toggle" class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>Bem-vindo à<br><span class="highlight">Loja de Poções</span></h1>
+      <p>Poções mágicas de verdade. Feitas com amor, ingredientes raros e um toque de feitiço.</p>
+      <a href="#produtos" class="btn-primary">Explorar Poções</a>
+    </div>
+    <div class="hero-bg"></div>
+  </header>
+
+  <!-- PRODUTOS -->
+  <section id="produtos" class="produtos-section">
+    <div class="container">
+      <h2 class="section-title">Nossas Poções Mágicas</h2>
+      <div class="produtos-grid" id="produtos-grid">
+        <!-- JS irá preencher, mas temos exemplos abaixo -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="contato-section">
+    <div class="container">
+      <h2 class="section-title">Entre em Contato com o Mago</h2>
+      <form id="contact-form" class="contact-form">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <textarea placeholder="Qual poção você precisa?" rows="5" required></textarea>
+        <button type="submit" class="btn-primary">Enviar Mensagem para o Mago</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Loja de Poções • Elixir Místico • Feito com ✨ e poções</p>
+    </div>
+  </footer>
+
+  <!-- CARRINHO MODAL -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">×</span>
+      <h3>Seu Carrinho de Poções</h3>
+      <div id="cart-items"></div>
+      <div class="cart-total">
+        <strong>Total: <span id="cart-total">0</span> moedas de ouro</strong>
+      </div>
+      <button id="checkout-btn" class="btn-primary">Finalizar Compra (Mágica)</button>
+    </div>
+  </div>
+
+  <!-- PERSONAGEM FLUTUANTE NO CANTO INFERIOR DIREITO -->
+  <div id="floating-mago" class="floating-mago">
+    <img src="img/Design_sem_nome-removebg-preview.png" alt="Mago Elixir" class="mago-img">
+    <div id="speech-bubble" class="speech-bubble">
+      <p id="bubble-text">Olá, aventureiro! Precisa de uma poção?</p>
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
