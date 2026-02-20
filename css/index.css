@@ -6,7 +6,7 @@
 html { scroll-behavior:smooth; }
 body {
   font-family: 'Segoe UI', system-ui, sans-serif;
-  background: linear-gradient(135deg, #0a001f 0%, #30780f 100%);
+  background: linear-gradient(135deg, #0a001f 0%, #6b00b3 100%);
   color: #f0e6ff;
   overflow-x: hidden;
 }
