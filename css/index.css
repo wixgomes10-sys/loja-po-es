@@ -92,7 +92,6 @@ body {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url('https://i.imgur.com/5zK0vYJ.png') center/cover no-repeat;
   filter: brightness(0.6);
 }
 .hero-content {
@@ -300,4 +299,5 @@ body {
   .menu { display: none; position: fixed; top: 80px; left: 0; right: 0; background: rgba(15,0,31,0.98); flex-direction: column; padding: 2rem; gap: 2rem; }
   .menu.active { display: flex; }
   .menu-toggle { display: block; }
+
 }
